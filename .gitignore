@@ -3,3 +3,9 @@ node_modules/
 shots/
 shoot.js
 .vercel
+dist-pkg/
+*.zip
+test-sheets.js
+shoot.js
+package.json
+package-lock.json
