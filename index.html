@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5f6f8" />
+  <meta name="description" content="Wanderly — a clean, light-themed stays & travel booking app UI concept. 6 responsive screens, no dependencies." />
+  <title>Wanderly — Stays Booking App UI</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="device">
+  <div class="app">
+
+    <!-- ===================== EXPLORE / HOME ===================== -->
+    <main class="screen is-active" id="s-explore" aria-label="Explore">
+      <div class="top">
+        <div>
+          <div class="eyebrow" style="color:var(--accent)">Find your stay</div>
+          <h1>Explore <span>Wanderly</span></h1>
+        </div>
+        <button class="avatar letter" data-go="profile" aria-label="Profile">V</button>
+      </div>
+
+      <div class="searchbar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        <input placeholder="Where to? Anywhere · Any week" aria-label="Search destinations" />
+        <span class="filter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg></span>
+      </div>
+
+      <div class="cats">
+        <button class="cat is-active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/><path d="M2 13c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/><path d="M12 3l6 5H6l6-5Z"/></svg>Beach</button>
+        <button class="cat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20l6-12 4 7 3-5 5 10z"/></svg>Cabins</button>
+        <button class="cat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l7-4 7 4v13"/><path d="M9 21v-5h4v5"/><path d="M20 21V11l-3-2"/></svg>City</button>
+        <button class="cat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c3-6 5-9 8-9s5 3 8 9"/><circle cx="12" cy="5" r="2.5"/></svg>Nature</button>
+        <button class="cat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg>Pools</button>
+      </div>
+
+      <div class="section-head"><div class="sec-title">Featured stay</div><button class="link" data-stay="beach">See details</button></div>
+      <div class="feature" data-stay="beach">
+        <img src="images/hero.jpg" alt="Azure Overwater Villas" />
+        <div class="grad"></div>
+        <span class="tag"><span class="dot"></span> Guest favourite</span>
+        <button class="fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.2 5.2 0 0 1 12 6a5.2 5.2 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button>
+        <div class="info">
+          <h3>Azure Overwater Villas</h3>
+          <p><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Malé, Maldives · ★ 4.97</p>
+          <div class="price"><b>$420</b> / night</div>
+        </div>
+      </div>
+
+      <div class="section-head"><div class="sec-title">Popular nearby</div><button class="link">View all</button></div>
+      <div class="hscroll">
+        <div class="hcard" data-stay="mountain"><div class="ph"><img src="images/mountain.jpg" alt=""></div><div class="b"><h3>Pinecrest A-Frame</h3><div class="loc">Aspen, Colorado</div><div class="price"><b>$190</b> <span class="muted">night</span></div></div></div>
+        <div class="hcard" data-stay="city"><div class="ph"><img src="images/city.jpg" alt=""></div><div class="b"><h3>Caldera Blue Suites</h3><div class="loc">Santorini, Greece</div><div class="price"><b>$265</b> <span class="muted">night</span></div></div></div>
+        <div class="hcard" data-stay="safari"><div class="ph"><img src="images/safari.jpg" alt=""></div><div class="b"><h3>Savanna Lodge</h3><div class="loc">Maasai Mara, Kenya</div><div class="price"><b>$310</b> <span class="muted">night</span></div></div></div>
+      </div>
+
+      <div class="section-head"><div class="sec-title">More places to stay</div><button class="link" data-go="search">Filters</button></div>
+      <div class="listings">
+        <article class="listing" data-stay="beachhouse">
+          <div class="ph"><img src="images/beachhouse.jpg" alt=""><span class="badge">Pool</span><button class="fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.2 5.2 0 0 1 12 6a5.2 5.2 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button></div>
+          <div class="body"><div class="r1"><h3>Palmview Infinity Villa</h3><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg>4.90</span></div><div class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/></svg>Bali, Indonesia</div><div class="price"><b>$280</b> / night · free cancellation</div></div>
+        </article>
+        <article class="listing" data-stay="room">
+          <div class="ph"><img src="images/room.jpg" alt=""><span class="badge">Central</span><button class="fav" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.2 5.2 0 0 1 12 6a5.2 5.2 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button></div>
+          <div class="body"><div class="r1"><h3>The Nordic Loft</h3><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg>4.85</span></div><div class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/></svg>Copenhagen, Denmark</div><div class="price"><b>$145</b> / night · superhost</div></div>
+        </article>
+      </div>
+    </main>
+
+    <!-- ===================== SEARCH RESULTS ===================== -->
+    <main class="screen" id="s-search" aria-label="Search results">
+      <div class="topbar">
+        <button class="back" data-go="explore" aria-label="Back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <div><h2>Bali, Indonesia</h2><div class="muted" style="font-size:12.5px">Aug 20–25 · 2 guests · 128 stays</div></div>
+      </div>
+      <div class="cats" style="padding-top:6px">
+        <button class="cat is-active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters</button>
+        <button class="cat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2v20M2 12h20"/></svg>Price</button>
+        <button class="cat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6"/><path d="M5 9v11h14V9"/></svg>Type</button>
+        <button class="cat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8"/></svg>Rating</button>
+      </div>
+      <div class="listings" style="padding-top:8px">
+        <article class="listing" data-stay="beachhouse"><div class="ph"><img src="images/beachhouse.jpg" alt=""><span class="badge">Pool</span><button class="fav" data-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.2 5.2 0 0 1 12 6a5.2 5.2 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button></div><div class="body"><div class="r1"><h3>Palmview Infinity Villa</h3><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg>4.90</span></div><div class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/></svg>Uluwatu, Bali</div><div class="price"><b>$280</b> / night</div></div></article>
+        <article class="listing" data-stay="beach"><div class="ph"><img src="images/hero.jpg" alt=""><span class="badge">Guest favourite</span><button class="fav" data-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.2 5.2 0 0 1 12 6a5.2 5.2 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button></div><div class="body"><div class="r1"><h3>Azure Overwater Villas</h3><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg>4.97</span></div><div class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/></svg>Nusa Dua, Bali</div><div class="price"><b>$420</b> / night</div></div></article>
+        <article class="listing" data-stay="room"><div class="ph"><img src="images/room.jpg" alt=""><span class="badge">Central</span><button class="fav" data-fav><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.2 5.2 0 0 1 12 6a5.2 5.2 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button></div><div class="body"><div class="r1"><h3>The Nordic Loft</h3><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg>4.85</span></div><div class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/></svg>Seminyak, Bali</div><div class="price"><b>$145</b> / night</div></div></article>
+      </div>
+    </main>
+
+    <!-- ===================== PROPERTY DETAIL ===================== -->
+    <main class="screen" id="s-detail" aria-label="Property detail" style="padding-bottom:calc(env(safe-area-inset-bottom) + 92px)">
+      <div class="gallery">
+        <img id="dImg" src="images/hero.jpg" alt="Stay photo" />
+        <button class="back-abs" data-go="explore" aria-label="Back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="fav-abs" data-fav aria-label="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.2 5.2 0 0 1 12 6a5.2 5.2 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></button>
+        <div class="dots"><i class="on"></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="detail-body">
+        <h1 id="dName">Azure Overwater Villas</h1>
+        <div class="sub">
+          <span class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg><span id="dLoc">Malé, Maldives</span></span>
+          <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg><span id="dRating">4.97</span> <span class="muted" id="dReviews" style="font-weight:600">(284 reviews)</span></span>
+        </div>
+
+        <div class="host">
+          <div class="h-av" id="dHostLetter">A</div>
+          <div><b>Hosted by Amara</b><span>Superhost · 6 years hosting</span></div>
+          <button class="msg" aria-label="Message host"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
+        </div>
+
+        <div class="sec-title" style="margin-bottom:12px">What this place offers</div>
+        <div class="amenities">
+          <div class="amenity"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 13a7 7 0 0 1 14 0"/><path d="M3 13h18M12 3v3"/></svg></span> Free WiFi</div>
+          <div class="amenity"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/><path d="M2 19c2-1 4-1 6 0s4 1 6 0 4-1 6 0"/><path d="M6 11V5a2 2 0 0 1 4 0"/></svg></span> Infinity pool</div>
+          <div class="amenity"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-6 9 6v11H3z"/><path d="M9 21v-6h6v6"/></svg></span> Ocean view</div>
+          <div class="amenity"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span> Self check-in</div>
+          <div class="amenity"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v10H3z"/><path d="M3 10h18"/></svg></span> Breakfast</div>
+          <div class="amenity"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span> 24/7 concierge</div>
+        </div>
+
+        <div class="sec-title" style="margin:20px 0 6px">About this stay</div>
+        <p class="about">Wake up above a turquoise lagoon in a private overwater villa. Floor-to-ceiling glass, a sun deck with direct ocean access, and a personal concierge. The ultimate escape for couples and families seeking calm and luxury.</p>
+      </div>
+      <div class="reserve-bar">
+        <div class="p"><b id="dPrice">$420</b> <span>/ night · Aug 20–25</span></div>
+        <button class="btn btn-primary" id="reserveBtn">Reserve</button>
+      </div>
+    </main>
+
+    <!-- ===================== BOOKING / CHECKOUT ===================== -->
+    <main class="screen" id="s-booking" aria-label="Booking" style="padding-bottom:calc(env(safe-area-inset-bottom) + 96px)">
+      <div class="topbar">
+        <button class="back" data-go="detail" aria-label="Back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <div><h2>Confirm &amp; pay</h2></div>
+      </div>
+
+      <div class="pad">
+        <div class="card mini-listing" style="margin-bottom:16px">
+          <img id="bImg" src="images/hero.jpg" alt="">
+          <div><b id="bName">Azure Overwater Villas</b><span id="bLoc">Malé, Maldives</span><span class="stars" style="margin-top:4px"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg>4.97 · Guest favourite</span></div>
+        </div>
+
+        <div class="eyebrow" style="margin-bottom:8px">Your trip</div>
+        <div class="card" style="margin-bottom:16px">
+          <div class="field"><div><div class="lbl">Dates</div><div class="val">Aug 20 – 25, 2026</div></div><button class="link">Edit</button></div>
+          <div class="field"><div><div class="lbl">Nights</div><div class="val" id="bNights">5 nights</div></div>
+            <div class="stepper"><button id="nMinus" aria-label="Fewer nights">−</button><b id="bNightsN">5</b><button id="nPlus" aria-label="More nights">+</button></div>
+          </div>
+          <div class="field"><div><div class="lbl">Guests</div><div class="val"><span id="bGuests">2</span> guests</div></div>
+            <div class="stepper"><button id="gMinus" aria-label="Fewer guests">−</button><b id="bGuestsN">2</b><button id="gPlus" aria-label="More guests">+</button></div>
+          </div>
+        </div>
+
+        <div class="eyebrow" style="margin-bottom:8px">Price details</div>
+        <div class="card" style="margin-bottom:16px">
+          <div class="breakdown">
+            <div class="line"><span id="bLineNights">$420 × 5 nights</span><span id="bSub">$2,100</span></div>
+            <div class="line"><span>Cleaning fee</span><span>$45</span></div>
+            <div class="line"><span>Service fee</span><span id="bFee">$252</span></div>
+            <div class="line total"><span>Total (USD)</span><span id="bTotal">$2,397</span></div>
+          </div>
+        </div>
+
+        <div class="eyebrow" style="margin-bottom:8px">Pay with</div>
+        <div class="card pay" style="margin-bottom:6px">
+          <span class="brand">VISA</span>
+          <div><b>•••• •••• •••• 4291</b><span>Expires 08/28</span></div>
+          <button class="chg">Change</button>
+        </div>
+        <div class="field-error" id="bookErr"></div>
+      </div>
+
+      <div class="reserve-bar">
+        <div class="p"><b id="bTotal2">$2,397</b> <span>total</span></div>
+        <button class="btn btn-primary" id="confirmBtn">Confirm &amp; pay</button>
+      </div>
+    </main>
+
+    <!-- ===================== TRIPS ===================== -->
+    <main class="screen" id="s-trips" aria-label="Trips">
+      <div class="top"><div><h1 style="font-size:24px">Your trips</h1></div></div>
+      <div class="tabs">
+        <button class="tab is-active" data-tab="upcoming">Upcoming</button>
+        <button class="tab" data-tab="past">Past</button>
+      </div>
+      <div class="pad" id="tripsUpcoming">
+        <div class="trip" data-stay="beach"><img src="images/hero.jpg" alt=""><div class="t"><b>Azure Overwater Villas</b><div class="loc">Malé, Maldives</div><div class="when"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>Aug 20 – 25, 2026</div></div><span class="status upcoming">Upcoming</span></div>
+        <div class="trip" data-stay="mountain"><img src="images/mountain.jpg" alt=""><div class="t"><b>Pinecrest A-Frame Cabin</b><div class="loc">Aspen, Colorado</div><div class="when"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>Dec 12 – 18, 2026</div></div><span class="status confirmed">Confirmed</span></div>
+      </div>
+      <div class="pad hidden" id="tripsPast">
+        <div class="trip" data-stay="city"><img src="images/city.jpg" alt=""><div class="t"><b>Caldera Blue Suites</b><div class="loc">Santorini, Greece</div><div class="when"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>May 3 – 9, 2026</div></div><span class="status confirmed">Completed</span></div>
+        <div class="trip" data-stay="room"><img src="images/room.jpg" alt=""><div class="t"><b>The Nordic Loft</b><div class="loc">Copenhagen, Denmark</div><div class="when"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>Feb 1 – 4, 2026</div></div><span class="status confirmed">Completed</span></div>
+      </div>
+    </main>
+
+    <!-- ===================== PROFILE ===================== -->
+    <main class="screen" id="s-profile" aria-label="Profile">
+      <div class="top"><div><h1 style="font-size:24px">Profile</h1></div></div>
+      <div class="p-head">
+        <div class="big letter">V</div>
+        <h2>Victor Mwangi</h2>
+        <p>victor@email.com · Member since 2026</p>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><b class="accent">12</b><span>trips</span></div>
+        <div class="kpi"><b>8</b><span>saved</span></div>
+        <div class="kpi"><b>4.9</b><span>rating</span></div>
+      </div>
+      <div class="section-head"><div class="sec-title">Account</div></div>
+      <div class="list-card">
+        <button class="list-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><b>Personal information</b><span class="chev">›</span></button>
+        <button class="list-row" data-go="trips"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 10h18M8 2v4M16 2v4"/></svg></span><b>My trips</b><span class="chev">›</span></button>
+        <button class="list-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.2 5.2 0 0 1 12 6a5.2 5.2 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></span><b>Wishlists</b><span class="chev">›</span></button>
+        <button class="list-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/></svg></span><b>Payment methods</b><span class="chev">›</span></button>
+      </div>
+      <div class="section-head"><div class="sec-title">Settings</div></div>
+      <div class="list-card" style="margin-bottom:20px">
+        <button class="list-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/></svg></span><b>Notifications</b><span class="chev">›</span></button>
+        <button class="list-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span><b>Language &amp; currency</b><span class="chev">›</span></button>
+        <button class="list-row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg></span><b style="color:var(--accent-dark)">Log out</b><span class="chev">›</span></button>
+      </div>
+    </main>
+
+    <!-- ===================== BOTTOM NAV ===================== -->
+    <nav class="nav" aria-label="Primary">
+      <button class="nav-item is-active" data-go="explore" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>Explore</button>
+      <button class="nav-item" data-go="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.2 5.2 0 0 1 12 6a5.2 5.2 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>Saved</button>
+      <button class="nav-item" data-go="trips"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 10h18M8 2v4M16 2v4"/></svg>Trips</button>
+      <button class="nav-item" data-go="profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Profile</button>
+    </nav>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span class="toast-msg">Done</span>
+    </div>
+
+  </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
