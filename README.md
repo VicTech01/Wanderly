@@ -13,7 +13,8 @@ A complete, production-ready mobile booking app interface built with **pure HTML
 | Screen | Highlights |
 |---|---|
 | **Explore** | Search bar, category chips, featured stay hero, horizontal scroller, listing cards |
-| **Search / Saved** | Filterable results with wishlist hearts |
+| **Search results** | Filterable results with wishlist hearts |
+| **Saved / Wishlists** | Rendered from live state — add/remove hearts anywhere and it updates, with a designed empty state |
 | **Property Detail** | Photo gallery, rating & reviews, host card, amenities, sticky reserve bar |
 | **Booking / Checkout** | Live price calculation, guests & nights steppers, price breakdown, confirm flow |
 | **Trips** | Upcoming / Past tabs with trip cards |
@@ -32,7 +33,7 @@ A complete, production-ready mobile booking app interface built with **pure HTML
 
 ```
 wanderly/
-├── index.html        # all 6 screens + bottom sheet + toast
+├── index.html        # all 7 screens + bottom sheet + toast
 ├── css/styles.css    # tokens → base → layout → components → responsive
 ├── js/app.js         # data · ui · render · booking · sheets · init
 └── images/           # hero, mountain, city, safari, room, beachhouse

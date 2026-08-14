@@ -1,0 +1,40 @@
+/* Wanderly Fiverr gig gallery (1280x769) — warm light theme */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--coral:#ff6a5a;--coral-dark:#f0503f;--teal:#0e9f9a;--text:#161a20;--muted:#6b7480}
+html,body{width:1280px;height:769px;overflow:hidden}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:var(--text);position:relative;
+  background:
+    radial-gradient(900px 500px at 12% -8%, #ffffff 0%, transparent 55%),
+    radial-gradient(760px 460px at 108% 12%, #ffe4df 0%, transparent 55%),
+    linear-gradient(160deg,#f4f0ec,#ece7e2 60%,#e5dfd9);
+}
+.stage{position:absolute;inset:0;padding:60px 70px;display:flex;align-items:center}
+.phone{border-radius:34px;background:#111418;padding:7px;box-shadow:0 40px 80px rgba(60,40,30,.35),0 0 0 1.5px #2a2f36}
+.phone img{display:block;border-radius:28px;width:100%;height:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+  font-size:15px;color:var(--coral-dark);background:rgba(255,106,90,.12);border:1px solid rgba(255,106,90,.4);padding:8px 16px;border-radius:999px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--coral);display:block;box-shadow:0 0 12px var(--coral)}
+h1{font-size:62px;line-height:1.02;letter-spacing:-2px;font-weight:850;margin-top:20px}
+h1 .accent{color:var(--coral)}
+.sub{font-size:22px;color:var(--muted);margin-top:16px;font-weight:500}
+.bullets{margin-top:28px;display:flex;flex-direction:column;gap:14px}
+.bullet{display:flex;align-items:center;gap:13px;font-size:20px;font-weight:600}
+.tick{width:30px;height:30px;border-radius:50%;background:rgba(14,159,154,.14);color:var(--teal);display:grid;place-items:center;flex:0 0 auto}
+.tick svg{width:18px;height:18px}
+.foot{position:absolute;left:70px;bottom:38px;display:flex;align-items:center;gap:13px;color:var(--muted);font-size:18px;font-weight:600}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--coral);box-shadow:0 0 12px var(--coral)}
+.brand{position:absolute;right:64px;bottom:36px;font-weight:850;font-size:22px}
+.brand .accent{color:var(--coral)}
+.center-head{text-align:center;width:100%}
+.center-head .eyebrow{margin:0 auto}
+.grid{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;gap:34px;padding-bottom:0}
+.grid .phone{width:238px;transform:translateY(60px)}
+.grid .phone.mid{width:262px;transform:translateY(10px);z-index:2}
+.chip{position:absolute;background:#fff;border-radius:16px;padding:13px 18px;box-shadow:0 16px 40px rgba(60,40,30,.18);display:flex;align-items:center;gap:11px;font-weight:700;font-size:15.5px}
+.chip .ic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:0 0 auto}
+.chip .ic.coral{background:rgba(255,106,90,.14);color:var(--coral-dark)}
+.chip .ic.teal{background:rgba(14,159,154,.14);color:var(--teal)}
+.chip .ic svg{width:18px;height:18px}
+.chip small{display:block;font-weight:600;color:var(--muted);font-size:12.5px}

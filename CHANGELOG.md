@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 — 2026-08-15
+- New dedicated Saved / Wishlists screen (7th screen): live-rendered list, heart sync across all screens, designed empty state
+- Explore search bar now opens Search results (keyboard accessible)
+- Filled heart state for saved stays
+
 ## 1.2.0 — 2026-08-15
 - Profile rows are now fully functional with animated bottom sheets:
   - Personal information (editable form + save toast)
